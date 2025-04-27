@@ -101,3 +101,11 @@ result('https://example.com')
 #### Result
 
 <img src="Screenshot 2025-04-26 at 16.42.30.png" alt="level-2" width="400"/>
+
+### Question 5:
+
+Create a real-time chat between two windows; using web sockets, vuejs and typescript.
+
+#### Answer
+
+Follow this link for [Answered](../realtimechat/frontend/README.md)

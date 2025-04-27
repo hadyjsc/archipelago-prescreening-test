@@ -13,7 +13,7 @@ This guide provides instructions to set up, develop, and build the project.
 Ensure you have the following installed on your system:
 - [Node.js](https://nodejs.org/) (LTS version recommended)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
-- Need to running the backend first
+- [Backend](../backend/) Need to running the backend first
 
 #### Project Setup
 
