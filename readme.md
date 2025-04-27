@@ -1,16 +1,16 @@
-### Basic Questions
+## Basic Questions
 
 Plase follow this link [Answered](basic/)
 
-### Database Questions
+## Database Questions
 
 Plase follow this link [Answered](database/)
 
-### JavaScript/TypeScript Questions
+## JavaScript/TypeScript Questions
 
 Plase follow this link [Answered](typescript/)
 
-### Vue.js
+## Vue.js
 
 #### Question 1
 Explain Vue.js reactivity and common issues when tracking changes.
@@ -38,7 +38,7 @@ What’s the difference between pre-rendering and server side rendering?
 Answer:
 
 
-### Website Security Best Practises
+## Website Security Best Practises
 
 1. Always need to validation each of form input
 2. For the strict input form like login or transaction page using password, must be implement limitation for submit if return response doesnt match
@@ -48,7 +48,7 @@ Answer:
 6. Secure the configuration file
 7. Makesure the code is clean, remove logs from browser
 
-### Website Performance Best Practises
+## Website Performance Best Practises
 
 1. Optimize code, simplify heavy logic like nested loop.
 2. Enable cache.
@@ -56,11 +56,11 @@ Answer:
 4. Choose best server to handle traffic.
 5. Minify asset css and javascript to reduce file size.
 
-### Golang
+## Golang
 
 Plase follow this link [Answered](golang/)
 
-### Tools
+## Tools
 
 1. Git (4)
 2. Redis (3)

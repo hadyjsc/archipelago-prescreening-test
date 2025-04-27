@@ -63,8 +63,6 @@ io.on('connection', (socket) => {
      * @description This event is emitted when a user disconnects. It removes the user from the users object.
      */
     socket.on('disconnect', () => {
-        console.log('A user disconnected');
-
         const disconnectedUser = Object.keys(users).find((key) => users[key] === socket.id);
         if (disconnectedUser) {
             delete users[disconnectedUser];
