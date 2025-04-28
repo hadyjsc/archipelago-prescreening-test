@@ -14,32 +14,47 @@
 </template>
 
 <script lang="ts">
-import { ref } from 'vue';
 
 export default {
     name: 'SendMessage',
     props: {},
     emits: ['sent', 'typing'],
-    setup(_, { emit }) {
-        const message = ref('');
-
-        const sendMessage = () => {
-            if (message.value.trim() === '') return;
-            emit('sent', message.value);
-            message.value = '';
-        };
-
-        const typingMessage = () => {
-            if (message.value.trim() !== '') {
-                emit('typing');
+    methods: {
+        sendMessage() {
+            if (this.message.trim() === '') return;
+            this.$emit('sent', this.message);
+            this.message = '';
+        },
+        typingMessage() {
+            if (this.message.trim() !== '') {
+                this.$emit('typing');
             }
+        },
+        clearMessage() {
+            this.message = '';
+        },
+        handleOnEnter(event: KeyboardEvent) {
+            if (event.key === 'Enter') {
+                this.sendMessage();
+            }
+        },
+    },
+    data() {
+        return {
+            message: '',
         };
-
-        const clearMessage = () => {
-            message.value = '';
-        };
-
-        return { message, sendMessage, clearMessage, typingMessage };
+    },
+    mounted() {
+        window.addEventListener('keydown', this.handleOnEnter);
+        window.addEventListener('click', this.clearMessage);
+        window.addEventListener('click', this.sendMessage);
+        window.addEventListener('keydown', this.typingMessage);
+    },
+    beforeUnmount() {
+        window.removeEventListener('keydown', this.handleOnEnter);
+        window.removeEventListener('click', this.clearMessage);
+        window.removeEventListener('click', this.sendMessage);
+        window.removeEventListener('keydown', this.typingMessage);
     },
 }
 </script>

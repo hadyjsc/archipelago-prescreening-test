@@ -41,9 +41,9 @@ Answer:
 ## Website Security Best Practises
 
 1. Always need to validation each of form input
-2. For the strict input form like login or transaction page using password, must be implement limitation for submit if return response doesnt match
+2. For the sensitive input form like login or transaction page using password, must be implement limitation for submit if return response doesnt match
 3. Using authentication and authorization
-4. Encrypt strict data
+4. Encrypt sensitive data
 5. Secure the web protocol like using https or ddos protection
 6. Secure the configuration file
 7. Makesure the code is clean, remove logs from browser
@@ -55,6 +55,7 @@ Answer:
 3. If using image, optimize the image, don't render actual size image.
 4. Choose best server to handle traffic.
 5. Minify asset css and javascript to reduce file size.
+6. If website have backend, do heavy process in the backend (server) like generate report or math calculation
 
 ## Golang
 

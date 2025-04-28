@@ -81,6 +81,13 @@ export default {
                 this.errorMessage = ''
             }
         }
-    }
+    },
+    mounted() {
+        window.addEventListener('click', this.saveUser)
+    },
+    beforeUnmount() {
+        window.removeEventListener('click', this.saveUser)
+    },
+    
 }
 </script>
