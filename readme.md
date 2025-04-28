@@ -15,27 +15,31 @@ Plase follow this link [Answered](typescript/)
 #### Question 1
 Explain Vue.js reactivity and common issues when tracking changes.
 
-Answer: 
+Answer: Vue reactivity is update ui component automatically if the data is updated.
 
 #### Question 2
 Describe data flow between components in a Vue.js app
 
 Answer:
+1. Parent to child, passing data parent using props property in child component
+2. Child to parent, passing data chlid using emit event then in parent handling in method
 
 #### Question 3
 List the most common cause of memory leaks in Vue.js apps and how they can be solved.
 
-Answer:
+Answer: No event listener clean up, solution implement event listener remove in before mount
 
 #### Question 4
 What have you used for state management
 
-Answer:
+Answer: Yes, using vuex
 
 #### Question 5
 What’s the difference between pre-rendering and server side rendering?
 
 Answer:
+Pre-rendering : render as static html page, easy, seo friendly, static content.
+SSR: render page in server every user request, expensive, more server spec, dynamic or realtime content, better to heavey process.
 
 
 ## Website Security Best Practises

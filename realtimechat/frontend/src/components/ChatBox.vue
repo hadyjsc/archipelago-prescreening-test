@@ -13,7 +13,7 @@
                     <v-list>
                         <v-list-item-group>
                             <v-list-item v-for="(message, index) in messages" :key="index">
-                                <v-list-item-content
+                                <v-list-item-content :key="`content-${index}`"
                                     v-bind:class="(message.sender == userId) ? 'float-right' : 'float-left'">
                                     <Card :message="message.message" :created-at="message.createdAt"
                                         :sender="message.sender" :user-id="userId"> </Card>
