@@ -38,7 +38,9 @@ Answer: Yes, using vuex
 What’s the difference between pre-rendering and server side rendering?
 
 Answer:
+
 Pre-rendering : render as static html page, easy, seo friendly, static content.
+
 SSR: render page in server every user request, expensive, more server spec, dynamic or realtime content, better to heavey process.
 
 
